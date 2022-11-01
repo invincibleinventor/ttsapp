@@ -1,0 +1,2 @@
+var cryptoJs = require("crypto-js")
+console.log(cryptoJs.AES.encrypt("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJzZmNxb2RtdWNhZ3J4b2hta2d4Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2MDkyNjk0OSwiZXhwIjoxOTc2NTAyOTQ5fQ.8PZmvfHrTPVNheNjYHyJJS2jZC5EjCIlOkQK3t2Tvwc",`nUkRD8q(u<[YO7'W{*=_sPeca1G_wmfb*U#nof>QL4H$:@a(cqx"yijy#>I)_9e`).toString())

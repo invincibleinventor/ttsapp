@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-jost {
+  font-family: "Jost";
+}
+
+.font-inter {
+  font-family: "Inter";
+}
+.code {
+  font-family: "Source Code Pro", monospace;
+  display: block;
+  background-color: white;
+  color: #000000;
+  padding: 1em;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  display: block;
+}
+
+select {
+  @apply mt-2 form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+}
+
+table{
+  @apply w-2/3 mx-auto my-10 font-inter border border-neutral-200;
+}
+
+th{
+  @apply p-3 py-2 bg-blue-500 text-white font-semibold text-left border border-white;
+}
+
+td {
+  @apply p-3 py-2 text-sm border border-neutral-200;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 28px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

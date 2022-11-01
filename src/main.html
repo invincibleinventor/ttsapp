@@ -1,0 +1,177 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="bundle.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="flex flex-col bg-neutral-100">
+    <div id="formie">
+      <div id="formie">
+        <div
+          id="mySidenav"
+          class="sidenav bg-white shadow-lg h-screen flex flex-col"
+        >
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="/" class="font-md text-neutral-600 p-2 mx-4">Home</a>
+
+          <a href="forms.html" class="font-md text-neutral-600 p-2 mx-4"
+            >Forms</a
+          >
+          <a href="upload.html" class="font-md text-neutral-600 p-2 mx-4"
+            >Upload</a
+          >
+          <a
+            href="https://thetvsschool.org"
+            class="font-md text-neutral-600 p-2 mx-4"
+            >Website</a
+          >
+
+          <button
+            onclick="logout()"
+            class="outline-none font-medium text-white w-auto mt-auto bg-blue-500 mb-5 font-inter py-2 mx-4 px-4 text-sm md:text-md lg:text-md"
+          >
+            Logout
+          </button>
+        </div>
+        <div
+          class="px-6 pr-3 sm:px-4 sm:pr-4 bg-blue-500 flex flex-row content-center items-center py-1 border-b border-neutral-100"
+        >
+          <h1 class="text-white font-inter font-medium sm:font-semibold">
+            Welcome
+          </h1>
+          <button
+            onclick="logout()"
+            class="outline-none font-medium text-blue-500 ml-auto mr-2 bg-white font-inter py-[8px] md:py-[6px] m-2 px-4 text-sm md:text-md lg:text-md"
+          >
+            Logout
+          </button>
+          <span
+            onclick="openNav()"
+            class="text-white font-semibold md:text-lg text-lg iconify font-jost ml-4 mr-4 mb-0 md:mr-0"
+            data-icon="ant-design:menu"
+            >Forms</span
+          >
+        </div>
+        <div class="py-4">
+          <div class="grid">
+            <div class="grid lg:w-1/2 grid-cols-2 md:grid-cols-3 lg:px-6 px-3">
+              <button
+                onclick="window.location.href='https://thetvsschool.org'"
+                class="md:py-8 shadow-sm bg-gradient-to-br from-pink-500 to-pink-300 py-5 px-3 m-2 flex md:flex-col md:space-y-4 space-y-0 flex-row items-center content-center"
+              >
+                <span
+                  class="text-white font-semibold md:text-5xl text-2xl iconify font-jost md:ml-0 ml-auto mr-4 mb-0 md:mr-0"
+                  data-icon="ep:postcard"
+                ></span>
+
+                <h1
+                  class="text-white font-inter font-semibold text-sm md:text-md lg:text-md md:mr-0 mr-auto"
+                >
+                  <span class="hidden md:inline-flex">Main</span> Website
+                </h1>
+              </button>
+              <button
+                onclick="window.location.href='forms.html'"
+                class="md:py-8 py-5 px-3 m-2 shadow-sm bg-gradient-to-br from-violet-500 to-violet-300 flex md:flex-col md:space-y-4 space-y-0 flex-row items-center content-center"
+              >
+                <span
+                  class="text-white font-semibold md:text-5xl text-2xl iconify font-jost md:ml-0 ml-auto mr-4 mb-0 md:mr-0"
+                  data-icon="ep:document"
+                  >Forms</span
+                >
+
+                <h1
+                  class="text-white font-inter font-semibold text-sm md:text-md lg:text-md md:mr-0 mr-auto"
+                >
+                  Your Forms
+                </h1>
+              </button>
+              <button
+                onclick="window.location.href='upload.html'"
+                class="md:py-8 py-5 px-3 m-2 bg-gradient-to-br from-neutral-600 to-neutral-400 flex md:flex-col md:space-y-4 space-y-0 flex-row items-center content-center"
+              >
+                <span
+                  class="text-white font-semibold md:text-5xl text-2xl iconify font-jost md:ml-0 ml-auto mr-4 mb-0 md:mr-0"
+                  data-icon="ep:upload"
+                  >Forms</span
+                >
+
+                <h1
+                  class="text-white font-inter font-semibold text-sm md:text-md lg:text-md md:mr-0 mr-auto"
+                >
+                  Upload
+                </h1>
+              </button>
+              <button
+                class="md:py-8 py-5 px-3 m-2 flex md:flex-col md:space-y-4 bg-gradient-to-br from-green-500 to-green-300 space-y-0 flex-row items-center content-center"
+              >
+                <span
+                  class="text-white font-semibold md:text-5xl text-2xl iconify font-jost md:ml-0 ml-auto mr-4 mb-0 md:mr-0"
+                  data-icon="ep:link"
+                  >Forms</span
+                >
+
+                <h1
+                  class="text-white font-inter font-semibold text-sm md:text-md lg:text-md md:mr-0 mr-auto"
+                >
+                  Portal
+                </h1>
+              </button>
+              <button
+                class="md:py-8 py-5 px-3 m-2 flex md:flex-col bg-gradient-to-br from-blue-500 to-blue-300 md:space-y-4 space-y-0 flex-row items-center content-center"
+              >
+                <span
+                  class="text-white font-semibold md:text-5xl text-2xl iconify font-jost md:ml-0 ml-auto mr-4 mb-0 md:mr-0"
+                  data-icon="ep:message"
+                ></span>
+
+                <h1
+                  onclick="window.location.href='mailto:invincibleinventor@gmail.com'"
+                  class="text-white font-inter font-semibold text-sm md:text-md lg:text-md md:mr-0 mr-auto"
+                >
+                  Contact
+                </h1>
+              </button>
+              <button
+                onclick="accessAdmin()"
+                class="md:py-8 py-5 px-3 m-2 bg-gradient-to-br from-red-500 to-red-300 flex md:flex-col md:space-y-4 space-y-0 flex-row items-center content-center"
+              >
+                <span
+                  class="text-white font-semibold md:text-5xl text-2xl iconify font-jost md:ml-0 ml-auto mr-4 mb-0 md:mr-0"
+                  data-icon="ep:user"
+                ></span>
+
+                <h1
+                  class="text-white font-inter font-semibold text-sm md:text-md lg:text-md md:mr-0 mr-auto"
+                >
+                  Admin <span class="hidden md:inline-flex">Console</span>
+                </h1>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="admin"></div>
+      </div>
+      <div id="notlogged">Not Logged In. Access Denied</div>
+    </div>
+  </body>
+</html>
