@@ -87,7 +87,7 @@ if (admin) {
     const { data, error } = await supabase.from("Forms").select();
     JsLoadingOverlay.hide()
     var ar = data;
-    document.getElementById("htitle").innerHTML = ar[id - 1].title;
+    document.getElementById("htitle").innerHTML = table;
   }
   async function fetchdata() {
     JsLoadingOverlay.show(adminobj);
