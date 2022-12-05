@@ -91,7 +91,7 @@ if (admin) {
   }
   async function fetchdata() {
     JsLoadingOverlay.show(adminobj);
-    const { data, error } = await supabase.from(table).select();
+    const { data, error } = await supabase.from("Total").select();
     JsLoadingOverlay.hide()
     var br = data;
     convertJsontoHtmlTable(br);
@@ -156,7 +156,7 @@ if (admin) {
 }
 
 async function downloaddata() {
-  const { data, error } = await supabase.from(table).select();
+  const { data, error } = await supabase.from("Total").select();
   const options = {
     fieldSeparator: ",",
     quoteStrings: '"',
