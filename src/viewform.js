@@ -91,7 +91,7 @@ if (admin) {
   }
   async function fetchdata() {
     JsLoadingOverlay.show(adminobj);
-    const { data, error } = await supabase.from("Total").select('*').eq('PARENTS NUMBER',true);
+    const { data, error } = await supabase.from("Total").select('*').eq('PARENTS CARNIVAL',true);
     JsLoadingOverlay.hide()
     var br = data;
     convertJsontoHtmlTable(br);
